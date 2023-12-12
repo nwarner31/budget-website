@@ -1,0 +1,96 @@
+.delete-button {
+    background-image: url("trash.png");
+    background-size: 15px;
+    background-position: center;
+    background-repeat: no-repeat;
+    aspect-ratio: 1 / 1;
+    height: 20px;
+    border-radius: 3px;
+
+}
+
+.delete-button, #budget-submit {
+    cursor: pointer;
+}
+
+.delete-button:hover, #budget-submit:hover {
+    background-color: antiquewhite;
+}
+
+.body {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    height: 100vh;
+}
+
+.header-container {
+    text-align: center;
+    margin-bottom: 25px;
+}
+
+#budget-amount {
+    width: 70px;
+}
+
+.budget-container {
+    display: flex;
+    justify-content: space-around;
+    align-items: flex-start;
+    flex-wrap: wrap;
+}
+
+.budget-type-container {
+    border: 2px black solid;
+    width: 300px;
+    text-align: center;
+    margin-bottom: 30px;
+}
+
+.budget-type-subcontainer {
+    border-bottom: 1px black solid;
+    display: flex;
+}
+
+.budget-type-header {
+    font-weight: bolder;
+    font-size: 1.2rem;
+}
+
+.budget-type-subheader {
+    border-top: 1px black solid;
+    font-weight: bold;
+}
+
+.budget-desc {
+    flex-grow: 1;
+    text-align: left;
+    padding-left: 3px;
+}
+
+.budget-amount {
+    width: 65px;
+    text-align: right;
+}
+
+.budget-percent {
+    width: 55px;
+    text-align: right;
+}
+
+
+
+.budget-delete {
+    width: 25px;
+}
+
+.empty-row {
+    height: 20px;
+}
+
+.budget-total {
+    font-weight: bold;
+    font-size: 17px;
+    margin-right: 80px;
+    text-align: right;
+}

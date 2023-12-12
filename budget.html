@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Your Budget Webpage</title>
+    <link rel="stylesheet" href="main.css">
+</head>
+<body>
+    <div class="body">
+        <div class="header-container">
+            <h1>Your Budget</h1>
+            <div><h2>Balance: $<span id="balance"></span></h2></div>
+            <div>
+                <select id="budget-type">
+                    <option value="income">Income</option>
+                    <option value="expense">Expense</option>
+                </select>
+                <input id="budget-amount" type="number" placeholder="Amount">
+                <input id="budget-desc" type="text" placeholder="Description">
+                <button id="budget-submit" type="button" >Save</button>
+            </div>
+        </div>
+
+        <div class="budget-container">
+            <div class="budget-type-container">
+                <div class="budget-type-header">Income</div>
+
+                <div>
+                    <div class="budget-type-subcontainer budget-type-subheader">
+                        <span class="budget-desc">Description</span>
+                        <span class="budget-amount">Amount</span>
+                        <span class="budget-percent">Percent</span>
+                        <span class="budget-delete"></span>
+                    </div>
+                    <div id="income-list"></div>
+                    <div class="budget-total">Total Incomes: $<span id="incomes-total"></span></div>
+                </div>
+            </div>
+            <div class="budget-type-container">
+                <div class="budget-type-header">Expenses</div>
+                <div>
+                    <div class="budget-type-subcontainer budget-type-subheader">
+                        <span class="budget-desc">Description</span>
+                        <span class="budget-amount">Amount</span>
+                        <span class="budget-percent">Percent</span>
+                        <span class="budget-delete"></span>
+                    </div>
+                    <div id="expense-list"></div>
+                    <div class="budget-total">Total Expenses: $<span id="expenses-total"></span></div>
+                </div>
+            </div>
+        </div>
+    </div>
+<script src="main.js"></script>
+</body>
+</html>
